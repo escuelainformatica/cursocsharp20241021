@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CEBD10E-FBDB-41D1-BDE4-7402EB49141E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp7</RootNamespace>
-    <AssemblyName>ConsoleApp7</AssemblyName>
+    <ProjectGuid>{CE0B765C-49DC-4F26-A80F-2F3121422EFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Biblioteca1</RootNamespace>
+    <AssemblyName>Biblioteca1</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="modelo\Autor.cs" />
-    <Compile Include="modelo\Ciudad.cs" />
-    <Compile Include="modelo\Continente.cs" />
-    <Compile Include="modelo\Libro.cs" />
-    <Compile Include="modelo\Pais.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="modelo\Cliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="servicio\AutoSrv.cs" />
-    <Compile Include="servicio\CiudadSrv.cs" />
-    <Compile Include="servicio\LibroSrv.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Biblioteca1\Biblioteca1.csproj">
-      <Project>{CE0B765C-49DC-4F26-A80F-2F3121422EFB}</Project>
-      <Name>Biblioteca1</Name>
-    </ProjectReference>
+    <Compile Include="servicio\ClienteSrv.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

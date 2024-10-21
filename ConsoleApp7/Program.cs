@@ -1,4 +1,6 @@
-﻿using ConsoleApp7.modelo;
+﻿using Biblioteca1.modelo;
+using Biblioteca1.servicio;
+using ConsoleApp7.modelo;
 using ConsoleApp7.servicio;
 using System;
 using System.Collections.Generic;
@@ -52,6 +54,13 @@ namespace ConsoleApp7
             var arica = new Ciudad { Nombre = "Arica", Country = chile };
 
             CiudadSrv.Mostrar(arica);
+
+
+            var cli = new Cliente();
+
+            ClienteSrv.Mostrar(cli);
+            
+
 
             Console.ReadKey();
         }
